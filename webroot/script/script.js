@@ -1,9 +1,6 @@
 var elemento;
-var body;
-var animacion = 0;
 window.addEventListener("load", () => {
-    body = document.getElementsByTagName("body")[0];
-    body.addEventListener("wheel", cambiarElemento);
+    document.getElementsByTagName("body")[0].addEventListener("wheel", cambiarElemento);
     elemento = document.getElementsByTagName("section")[0];
     elemento.classList.remove("hidden");
 })
@@ -12,11 +9,12 @@ function cambiarElemento(evento) {
     var cambio = (tipo) => {
         if (tipo) {
             var elemento2 = elemento.previousElementSibling;
-            var entrada = "efecto2 0.5s 0s 1 reverse";
-            // var salida = "efecto1 0.5s 0s 1 normal"
+            var entrada = "efecto2 1s 0s 1 reverse";
+            // var salida = "efecto1 1s 0s 1 normal";
         } else {
             var elemento2 = elemento.nextElementSibling;
-            // var entrada = "efecto1 0.5s 0s 1 reverse";
+            var entrada = "efecto1 1s 0s 1 reverse";
+            // var salida = "efecto2 1s 0s 1 normal";
         }
         // elemento.style.animation = salida;
         
@@ -41,3 +39,4 @@ function cambiarElemento(evento) {
 
 
 }
+
