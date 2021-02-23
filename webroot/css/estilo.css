@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: 0;
+    border: 2px solid sandybrown;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    height: 80%;
+}
+
+main ul{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+main ul a{
+    font-family: 'Anton', sans-serif;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(67, 67, 67);
+    padding: 5px;
+    justify-content: space-around;
+    color: white;
+}
+
+section{
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    
+}
+p{
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+}
+section.hidden{
+    
+    display: none;
+}
+
+@keyframes efecto1{
+    0%{
+        top: 0px;
+        opacity: 1;
+    }100%{
+        top: 100px;
+        opacity: 0;
+    }
+}
+@keyframes efecto2{
+    0%{
+        top: 0px;
+        opacity: 1;
+    }100%{
+        top: -100px;
+        opacity: 0;
+    }
+}
